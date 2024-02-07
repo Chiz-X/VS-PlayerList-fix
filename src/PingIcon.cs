@@ -12,8 +12,8 @@ public abstract class PingIcon {
     public static AssetLocation Get(float ping) {
         return ping switch {
             < 0 => Unknown,
-            <= 0.065F => Best,
-            <= 0.125F => Good,
+            <= 0.150F => Best,
+            <= 0.250F => Good,
             <= 0.5F => Poor,
             _ => Bad
         };
